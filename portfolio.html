@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Alameen Niniola</title>
+  <meta name="description" content="Portfolio — Graphic Designer & Front-End Developer" />
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #0f0f10; color: #eaeaea; }
+    a { color: #36d1b6; text-decoration: none; }
+
+    header { background: #0b0b0c; padding: 18px 0; border-bottom: 1px solid #1a1a1a; }
+    .container { width: 92%; max-width: 1100px; margin: auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo { width: 56px; height: 56px; border-radius: 8px; object-fit: cover; }
+    header h1 { font-size: 1.25rem; margin: 0; color: #36d1b6; }
+    header p { margin: 0; color: #aeb1b6; font-size: 0.85rem; }
+    nav a { margin-left: 16px; color: #cbd5d9; font-weight: 600; }
+    nav a:hover { color: #36d1b6; }
+
+    main { max-width: 1100px; margin: 24px auto; padding: 0 20px; }
+    .hero { display: grid; grid-template-columns: 1fr 420px; gap: 28px; align-items: center; }
+    .hero h2 { font-size: 2rem; margin: 0 0 12px 0; color: #ffffff; }
+    .hero p { color: #bfc6c8; line-height: 1.6; margin: 0 0 18px 0; }
+    .buttons { display: flex; gap: 12px; }
+    .btn-primary { background: #36d1b6; color: #071017; padding: 10px 16px; border-radius: 8px; font-weight: 700; }
+    .btn-outline { border: 2px solid #36d1b6; color: #36d1b6; padding: 8px 14px; border-radius: 8px; }
+    .hero-img { width: 100%; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }
+
+    /* Projects */
+    #projects { margin-top: 44px; }
+    #projects h3 { color: #fff; margin-bottom: 6px; }
+    #projects p { color: #bfc6c8; margin-top: 0; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 18px; }
+    .project-card { background: linear-gradient(180deg,#0e0e0f,#131314); border: 1px solid #1b1b1c; border-radius: 10px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+    .project-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(7,13,15,0.6); }
+    .project-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+    .project-card .meta { padding: 14px; }
+    .project-card h4 { margin: 0 0 8px 0; color: #36d1b6; }
+    .project-card p { margin: 0; color: #bfc6c8; font-size: 0.95rem; }
+
+    /* About & Contact */
+    .about, .contact { margin-top: 36px; background: linear-gradient(180deg,#0e0f10,#0b0b0c); border-radius: 10px; padding: 22px; border: 1px solid #1a1a1a; }
+    .about h3, .contact h3 { margin-top: 0; color: #fff; }
+    .about p, .about li { color: #bfc6c8; }
+    .about ul { list-style: none; padding-left: 0; }
+    .about ul li { padding: 6px 0; border-bottom: 1px solid #141414; }
+    .contact form { display: grid; gap: 10px; margin-top: 12px; }
+    .contact input, .contact textarea { background: #0f1112; border: 1px solid #222; color: #e6e6e6; padding: 10px; border-radius: 8px; }
+    .contact button { background: #36d1b6; color: #081217; border: none; padding: 10px; border-radius: 8px; font-weight: 700; }
+
+    footer { margin-top: 28px; padding: 14px 0; text-align: center; color: #96a0a3; }
+
+    @media (max-width: 880px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero img { margin-top: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div>
+          <h1>Alameen Niniola</h1>
+          <p>Graphic Designer • Front-End Developer • Python Enthusiast</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h2>Hi — I'm Alameen. I design and build clean, usable experiences.</h2>
+        <p>I combine graphic design and front-end development to create visual and interactive products. I work with Photoshop, HTML/CSS, JavaScript, and Python.</p>
+        <div class="buttons">
+          <a class="btn-primary" href="#projects">See my work</a>
+          <a class="btn-outline" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>Selected Projects</h3>
+      <p>A mix of my deployed site and design work.</p>
+
+      <div class="projects-grid">
+        <!-- DML Two (user site) -->
+        <div class="project-card">
+          <a href="https://dml-two.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="DML Two screenshot">
+            <div class="meta">
+              <h4>DML Two — Deployed Website</h4>
+              <p>Deployed web app showcasing front-end work. Live link included.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Party Flyer -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80" alt="Party flyer mockup">
+          <div class="meta">
+            <h4>Party Promo — Flyer Design</h4>
+            <p>Event flyer designed in Photoshop with bold typography and vibrant contrast.</p>
+          </div>
+        </div>
+
+        <!-- Portfolio Template -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=80" alt="Portfolio template screenshot">
+          <div class="meta">
+            <h4>Portfolio Template</h4>
+            <p>Responsive single-page template built with HTML & CSS—clean, minimal, and accessible.</p>
+          </div>
+        </div>
+
+        <!-- Logo Suite -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?auto=format&fit=crop&w=900&q=80" alt="Logo suite mockup">
+          <div class="meta">
+            <h4>Logo Suite — Brand Identity</h4>
+            <p>Logo concepts and brand assets created as vector files for small business clients.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h3>About Me</h3>
+      <p>I am a 200-level Computer Science student at Lagos State University with a strong interest in design and front-end development. I love turning ideas into polished visuals and interactive experiences. I'm always learning new tools and improving my craft.</p>
+      <h4>Skills</h4>
+      <ul>
+        <li>Graphic Design: Photoshop, Illustrator</li>
+        <li>Front-End: HTML, CSS, JavaScript</li>
+        <li>Programming: Python</li>
+        <li>Tools: Git, VS Code</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <p>Want to work together or see more? Send an email.</p>
+      <form>
+        <input placeholder="Your name" />
+        <input placeholder="Your email" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Email</button>
+      </form>
+    </section>
+
+    <footer>
+      Made with ♥ — Alameen Niniola.
+    </footer>
+  </main>
+</body>
+</html>
